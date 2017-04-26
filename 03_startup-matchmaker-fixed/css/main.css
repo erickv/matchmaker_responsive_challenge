@@ -1,0 +1,310 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  cursor: default;
+  width:960px;
+  margin:0 auto;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 30px 0;
+}
+
+.button {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: yellow;
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  border-radius: 5px;
+}
+
+#page-header {
+  background: black;
+  color: white;
+  overflow: hidden;
+  border-bottom: 4px solid yellow;
+  padding: 0 3%;
+}
+#page-header a {
+  color: inherit;
+  text-decoration: none;
+}
+#page-header h1 {
+  float: left;
+  color: yellow;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  margin: 20px 0 0 0;
+}
+#page-header nav {
+  float: right;
+}
+
+#page-header nav ul li:first-child{
+  background: transparent;
+  position: absolute;
+ /* top: 0;
+  right: 0;*/
+  display: none;
+  
+
+}
+
+
+
+#page-header nav li {
+  float: left;
+}
+
+#page-header nav a {
+  display: block;
+  padding: 20px 15px;
+}
+
+#page-header nav li a:hover {
+  color: yellow;
+}
+
+#page-header nav li.active a {
+  background: #666;
+}
+
+#page-header nav strong {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+#page-header nav strong a {
+}
+
+
+.tagline {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin: 0;
+  padding: 25px 3%;
+  font-size: 25px;
+  line-height: 25px;
+  font-style: italic;
+  background: #C6C6C6;
+  border-top: 1px solid #AAA;
+}
+.tagline del {
+  color: #999;
+}
+.tagline ins {
+  text-decoration: none;
+  border-bottom: 3px solid yellow;
+}
+
+.banner {
+  background: url(../images/coworking.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 3%;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+.blurb {
+  background: rgba(255,255,255,.8);
+  width: 330px;
+  margin: 0 auto;
+  padding: 4%;
+  float: right;
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.touts {
+  background: #EEE;
+  background: white;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.tout {
+  float: left;
+  width:305.9px;
+  padding: 19px 14.1px;
+  box-shadow:inset -1px 0 0 rgba(0,0,0,.15);
+}
+.tout:last-child {
+  box-shadow: none;
+}
+.tout .button {
+  background: #C6C6C6;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 2% 3%;
+}
+
+
+/*Mobile version starts here*/
+
+@media screen and (max-width: 768px){
+
+
+  #page-header nav ul li:first-child{
+    display: inline-block;
+    float: none;
+  }
+
+#page-header h1 {
+
+  display: block;
+  margin: 0;
+}
+
+#page-header {
+
+/*  overflow: hidden;*/
+  border-bottom: 4px solid yellow;
+  padding: 0;
+  display: block;
+  float: none;
+}
+
+ nav ul li:first-child{
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  
+
+}
+
+
+#page-header nav {
+   display: block;
+   float: none;
+   position: relative;
+   text-align: center
+}
+
+#page-header nav li {
+  display: block;
+  float: none;
+  width: 100%;
+
+}
+
+.tagline {
+padding: 0;
+display: block;
+text-align: center;
+}
+
+#page-header nav li{
+  display: block;
+  float: none;
+  height: 0;
+}
+
+.line{
+  width: 1.6em;
+  margin-top: .25em;
+  height: 3px;
+  background: white;
+}
+
+nav ul li:first-child{
+    display: block;
+  }
+
+.banner {
+  background: url(../images/coworking.jpg) center center no-repeat;
+  display: block;
+  width: 100%;
+/*  background-size: contain;
+
+  overflow: hidden;
+  padding: 0;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.75);*/
+}
+
+.wrapper {
+  max-width: 320px;
+  margin: 0;
+  display: block;
+  padding: 0;
+  text-align: center;
+  float: none;
+}
+
+.blurb {
+  background: rgba(255,255,255,.8);
+  width: 100%;
+  margin: 0 auto;
+  padding: 4%;
+  
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.touts{
+  display: block;
+  overflow: hidden;
+  padding:  0;
+  float: none;
+}
+.tout {
+  float: none;
+  display: block;
+  width:305.9px;
+  padding: 19px 14.1px;
+
+  box-shadow:none;
+
+footer {
+  background: black;
+  color: white;
+  padding: 0;
+  text-align: center;
+  float: none;
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
